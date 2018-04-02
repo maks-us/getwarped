@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo"></div>
+      <div class="hamburger"><div class="row"></div><div class="row"></div><div class="row"></div></div>
+      <nav class="top-nav">
+        <a class="top-nav-link active">About</a>
+        <a class="top-nav-link" href="#what">What We Do</a>
+        <a class="top-nav-link" href="#who">Who We Are</a>
+        <a class="top-nav-link" href="https://medium.com/@alex.warp">Blog</a>
+      </nav>
+    </header>
+    <%= yield %>
+    <footer class="site-footer">
+      <div class="logo"></div>
+      <div class="footer-text">Warp Digital LLC  |  Boston MA</div>
+    </footer>
+    <%= javascript_include_tag "site" %>
+  </body>
+</html>

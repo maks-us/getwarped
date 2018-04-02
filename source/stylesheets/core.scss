@@ -1,0 +1,57 @@
+body {
+  background-color: $white-color;
+  color: $black-color;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 0px 12px;
+  text-align: center;
+}
+
+p {
+  font-family: Georgia;
+}
+
+a {
+  color: $gray-color;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $blue-color;
+  }
+}
+
+.btn {
+  color: $white-color;
+  border: 2px solid $white-color;
+  padding: 15px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  &.red-btn {
+    background-color: $red-color;
+    font-size: 18px;
+    transition: background-color 1s;
+    &:hover {
+      background-color: #dc0300;
+    }
+    &:focus,
+    &:hover {
+      color: $white-color;
+    }
+  }
+}
+
+.logo {
+  width: 136px;
+  height: 40px;
+  @include image-set('logo', 'png')
+}
+
+header {
+  font-weight: 700;
+  font-size: 42px;
+}

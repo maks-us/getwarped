@@ -1,0 +1,4 @@
+@mixin image-set($name, $extension) {
+  background-image: url("/images/#{$name}@3x.#{$extension}");
+  background-image: image-set(url("/images/#{$name}.#{$extension}") 1x, url("/images/#{$name}@2x.#{$extension}") 2x, url("/images/#{$name}@3x.#{$extension}") 3x);
+}

@@ -1,0 +1,48 @@
+nav.top-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  opacity: 0;
+  transition: 250ms opacity, 250ms background-color;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px 0px;
+  &.open {
+    z-index: 1;
+    opacity: 1;
+    background-color: white;
+  }
+  a {
+    padding: 10px 0px;
+    font-size: 2.0rem;
+    &:hover {
+      cursor: pointer;
+    }
+    &.active {
+      color: $blue-color;
+      border: 2px solid $blue-color;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  nav.top-nav {
+    opacity: 1;
+    padding: 0px;
+    width: initial;
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    z-index: 1;
+    &.open {
+      transform: translateY(0px);
+    }
+    a {
+      padding: 5px 18px;
+      font-size: .9rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.warp-speed {
+  padding-top: 100px;
+  color: $blue-color;
+  margin-bottom: 100px;
+  form {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+    input, textarea {
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      display: inline-block;
+      margin: 10px 0px;
+      padding: 10px;
+      border-radius: 2px;
+      width: 100%;
+    }
+    button {
+      width: 275px;
+    }
+  }
+}

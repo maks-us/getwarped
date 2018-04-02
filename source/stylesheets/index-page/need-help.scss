@@ -1,0 +1,24 @@
+$hero-img-height: 628px;
+.need-help {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 40px;
+  align-content: center;
+  .time-to-get-warped {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .btn {
+     width: 275px;
+  }
+  height: $hero-img-height;
+  position: absolute;
+  left: 0;
+  right: 0;
+  @include image-set('hero', 'png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
